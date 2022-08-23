@@ -1,0 +1,14 @@
+Binary Search (BS) is one of the most basic searching algorithms. It is common for interviewers to ask coding questions where the only or optimal solution requires us to use binary search. . This is especially important at on-site interviews, where interviewees are asked only two to four different problems. Unfortunately, failure to effectively use binary search bug-free can be a red flag.
+
+Binary search is also referred to as half-interval search, which gives us a hint at when to use it. If we can, roughly, eliminate half of the search area with a single condition, then we are binary searching our target.
+
+Handling Corner Cases!
+
+The most common reason why candidates fail at binary search coding interview questions is that they fail to handle corner cases.
+
+There are many reasons why binary search corner cases might form. For instance, a corner case is formed when the target is at the 0th index of an array when the target is at (n - 1)th index, when the loop goes infinite, and so on.
+
+Luckily, these pitfalls can be avoided if we choose the same approach every time.
+
+Now, we will take a walk through this approach.
+
