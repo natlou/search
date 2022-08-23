@@ -12,3 +12,14 @@ Luckily, these pitfalls can be avoided if we choose the same approach every time
 
 Now, we will take a walk through this approach.
 
+3. Details#
+Most of the people who deal with binary search problems get stuck by considering the specifics of each problem. But, most binary search questions rely on the same concepts. If we use the same solid foundation for our solution, we can easily bypass all of the specifics.
+
+Our foundation is built on five simple points:
+
+The left index points to 0 index.
+The right index points to the size of array.
+The while loop condition is left + 1 > right.
+We will move the left or right index to the mid index.
+We will check an element on the left index, outside of the loop.
+Let’s take a look at the complexity of our approach in the next lesson.
