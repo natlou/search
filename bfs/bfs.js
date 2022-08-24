@@ -39,6 +39,38 @@ function addEdge(origin, destination) {
 // Create the graph
 airports.forEach( (route) => addNode(route) );  // add vertices
 routes.forEach( (route) => addEdge(route[0], route[1]) ) // add Edges
-console.log(adjacencyList)
 
+console.log(adjacencyList);
 
+function bfs(root) {
+
+    const visited = new Set(); 
+
+    const queue = [];
+
+    queue.push(root);
+    
+    while (queue.length > 0) {
+
+        const airport = queue.shift(); // mutates the queue to remove to root
+
+        const destinations = adjacencyList.get(airport); 
+        
+        for (const destination of destinations) {
+
+            if (destination === 'BKK') {
+                console.log(`found BKK going from ${airport}`);
+            }
+
+            if (!visited.has(destination)) {
+                visited.add(destination); 
+                queue.push(destination); 
+            }
+            
+        }
+
+    }
+
+}
+
+bfs('PHX');
