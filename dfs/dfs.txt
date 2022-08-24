@@ -1,0 +1,6 @@
+start with any random node, then go to its first child, then it's child's first child ... 
+
+if the node has no children, then backtrack to the parent and find the children of it's parent
+
+usually implemented with Recursion or Stack 
+
