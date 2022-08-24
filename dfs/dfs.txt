@@ -4,3 +4,4 @@ if the node has no children, then backtrack to the parent and find the children 
 
 usually implemented with Recursion or Stack 
 
+time complexity is O(V + E)

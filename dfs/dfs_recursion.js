@@ -51,4 +51,16 @@ function dfs(root, visited = new Set()) {
 
     const destinations = adjacencyList.get(root); 
 
+    for (const destination of destinations) {
+
+        if (destination === 'BKK') {
+            console.log(`DFS found BKK in ${root}`);
+            return; 
+        }
+
+        // this function will push the destination to the top of the call stack 
+        if (!visited.has(destination)) {
+            dfs(destination, visited)
+        }
+    }
 }
